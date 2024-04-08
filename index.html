@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Formulário</title>
+
+    <style>
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 48pt;
+            color: rgb(77, 22, 129);
+        }
+    </style>
+ 
+ <h2>Manutenção de usuários do sistema interno.</h2>
+ <form action="enviar.php" method="get" autocomplete="on">
+     <p> <label for="ilogin">Login:</label>
+       <input type="text" name="login" id="ilogin">
+     </p>
+     <p>
+        <label for="pass">Senha</label>
+        <input type="password" name="pass" id="pass" minlength="8">
+    </p>
+    
+    <p> <label for="Status">Status</label>
+    <Select name="Status" id="Status">
+        <option value="Ativo">Ativo</option>
+        <option value="Inativo">Inativo</option>
+    </Select>
+
+    <p>Tipo: </p>
+        
+        <form>
+         <input type="radio" id="Técnico" name="fav_language" value="Técnico">
+         <label for="Técnico">Técnico</label><br>
+         <input type="radio" id="Professor" name="fav_language" value="Professor">
+         <label for="Professor">Professor</label><br>
+         <input type="radio" id="javascript" name="Aluno" value="Aluno">
+         <label for="Aluno">Aluno</label>
+        </form> 
+
+        <form>
+            <p><label for="Data Criação">Data Criação:</label>
+            <input type="date" id="Data Criação" name="Data Criação">
+            <input type="submit"></p>
+         </form>
+
+         <p>Perfil:</p>
+         <input type="radio" id="Convidado" name="fav_language" value="Convidado">
+         <label for="Convidado">Convidado</label><br>
+         <input type="radio" id="Administrador" name="fav_language" value="Administrador">
+         <label for="Administrador">Administrador</label><br>  </P>
+    
+         
+
+         <for><p><label for="iobservações">Observações:</label></p>
+            <textarea name="bservações" id="ibservações" cols="30" rows="10"></textarea>
+           </for>
+
+          
+          
+          <P>Módulos:</P>
+           <form>
+            <input type="checkbox" id="Compras" name="Compras" value="Compras">
+            <label for="Compras"> Compras </label>
+            <input type="checkbox" id="Documentação" name="Documentação" value="Documentação">
+            <label for="Documentação"> Documentação </label>
+            <input type="checkbox" id="Biblioteca" name="Biblioteca" value="Biblioteca">
+            <label for="Biblioteca"> Biblioteca</label>
+            <input type="checkbox" id="Acadêmico" name="Acadêmico" value="Acadêmico">
+            <label for="Acadêmico"> Acadêmico </label>
+            <input type="checkbox" id="Recursos Humanos" name="Recursos Humanos" value="Recursos Humanos">
+            <label for="Recursos Humanos"> Recursos Humanos </label>
+
+          </form> 
+
+          <p>
+            <button type="submit">Cadastrar</button>
+            <button type="reset">Limpar</button>
+    
+        </p>
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
